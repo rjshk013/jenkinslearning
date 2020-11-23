@@ -1,0 +1,35 @@
+Sample spring boot java application build using maven in jenkins docker container
+----------------------------------------------------------------------------------
+
+Date : 23-11-2020
+Environment:jenkins server -->jenkinsci/blueocean docker container
+
+Maven : Installed on docker automatically(maven 3.6.3v)
+
+Java : Didn't select ,using the default java from the running docker container
+
+Maven plugin :
+
+git repo :https://github.com/rjshk013/jenkinslearning/
+
+need to select branch as master
+
+Tasks will run:
+-----------------
+
+1.Build will be done at folder in docker jenkins folder 
+
+Building in workspace /var/jenkins_home/jobs/springboot1/workspace
+2.Clone git repo already configured 
+Cloning repository https://github.com/rjshk013/jenkinslearning/
+
+3.Find pom.xml and download artifacts
+
+4.Build done as per the given maven goal ,here clean package
+
+5.It will create jar snapshot of Demo1Application.java project 
+6.After successful build it will store jar file to location in docker 
+
+Archiving /var/jenkins_home/jobs/springboot1/workspace/target/demo1-0.0.1-SNAPSHOT.jar to com.example/demo1/0.0.1-SNAPSHOT/demo1-0.0.1-SNAPSHOT.jar
+
+
